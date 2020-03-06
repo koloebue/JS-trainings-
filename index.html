@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <p> Js Concepts Examples </p>
+    <script> 
+    // * Function to return similar value between two arrays */ 
+      function findSimilarValue(a1,a2) {
+  var result = [];
+  for(var i = 0; i<a1.length; i++) {
+    for(var j = 0; j<a2.length; j++) 
+      if(a1[i] === a2[j]) {
+        result.push(a1[i])
+      }
+    }
+    return result
+  }
+console.log(findSimilarValue([1,2,3], [5,4,2]));
+    </script>
+</body>
+</html>
